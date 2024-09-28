@@ -1,0 +1,22 @@
+<div class="dashboard-container">
+  <h1 class="dashboard-header">Dashboard</h1>
+
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <nav class="navbar">
+      <ul>
+        <li><a routerLink="/dashboard/patient-list" routerLinkActive="active">Patient List</a></li>
+        <li><a routerLink="/dashboard/doctor-list" routerLinkActive="active">Doctor List</a></li>
+        <li><a routerLink="/dashboard/appointments" routerLinkActive="active">Appointments</a></li>
+        <li><a routerLink="/dashboard/billing" routerLinkActive="active">Billing</a></li>
+        <li><a routerLink="/dashboard/reports" routerLinkActive="active">Reports</a></li>
+        <li><a routerLink="/dashboard/settings" routerLinkActive="active">Settings</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
